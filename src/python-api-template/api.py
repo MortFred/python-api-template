@@ -1,8 +1,8 @@
-from flask import Flask
+from fastapi import FastAPI
 
-app = Flask(__name__)
+app = FastAPI()
 
 
-@app.route("/test")
-def hello_world():
+@app.get("/test")
+async def hello_world():
     return "Hello, World!"

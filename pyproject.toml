@@ -10,5 +10,6 @@ authors = [
 ]
 readme = "README.md"
 dependencies = [
-    "flask"
+    "fastapi[all]",
+    "msal"
 ]
